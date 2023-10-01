@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { LoginComponent } from '../authentication/login/login.component';
+import { SigninComponent } from '@authentication/views';
+
+// Shared Imports
+// import { isLoggedGuard } from '@shared/guards'
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
-  { path: '', redirectTo: 'login', pathMatch: 'full' }, // Redirect to login by default
+  { path: 'signin', component: SigninComponent },
+  { path: '', redirectTo: 'signin', pathMatch: 'full' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

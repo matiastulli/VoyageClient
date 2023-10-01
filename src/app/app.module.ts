@@ -1,33 +1,35 @@
+// Angular Imports
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common'
 import { BrowserModule } from '@angular/platform-browser';
-import { AppConfig } from '../config';
-
-// Custom Module Imports
-import { AuthenticationModule } from '../authentication/authentication.module';
-
-// Other Angular Modules
 import { HttpClientModule } from '@angular/common/http';
-import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-// Components
+// This Module Imports
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+// Shared Imports
+import { AuthenticationModule } from '@authentication/modules';
+import { MaterialModule } from '@shared/modules'
+
+const sharedModules = [MaterialModule]
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+		CommonModule,
     BrowserModule,
     AuthenticationModule,
+		BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
+		// Shared
+		...sharedModules,
   ],
-  providers: [
-    {
-      provide: 'APP_CONFIG',
-      useValue: AppConfig,
-    }
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {

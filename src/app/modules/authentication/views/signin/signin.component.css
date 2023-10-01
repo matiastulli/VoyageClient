@@ -1,0 +1,76 @@
+/* Asegúrate de que el body y el HTML ocupen toda la altura de la pantalla */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Centra el contenido vertical y horizontalmente */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2; /* Cambié el fondo del body para que coincida con el cuadro de inicio de sesión */
+  height: 100%;
+}
+
+.sigin-container {
+  width: 400px; /* Aumenta el ancho del cuadro de inicio de sesión */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Redondea los bordes del cuadro */
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%); /* Centra el cuadro de inicio de sesión */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.mat-form-field:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px; /* Añade espacio entre el texto del label y el campo de entrada */
+}
+
+input[type='text'],
+input[type='password'] {
+  padding: 12px; /* Aumenta el espaciado interno para una mejor experiencia de usuario */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+
+input[type='text']:focus,
+input[type='password']:focus {
+  border-color: #4caf50;
+  outline: none; /* Elimina el borde de enfoque predeterminado */
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px; /* Aumenta el espacio interior para un aspecto más equilibrado */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}

@@ -25,13 +25,14 @@
     ],
 		"paths": {			
 			// Shared and Global paths
-			"@shared/models": ["src/app/shared/models/index.ts"],
-			"@shared/modules": ["src/app/shared/modules/index.ts"],
-			"@environment": ["src/environments/environment.local.ts"],
+			"@shared/models": ["src/app/shared/models/index"],
+			"@shared/modules": ["src/app/shared/modules/index"],
+			"@shared/guards": ["src/app/shared/guards/index"],
+			"@environment": ["src/environments/environment.local"],
       // authentication Module
-      "@authentication/views": ["src/app/modules/authentication/views/index.ts"],
-      "@authentication/services": ["src/app/modules/authentication/authentication.service.ts"],
-      "@authentication/modules": ["src/app/modules/authentication/authentication.module.ts"],
+      "@authentication/views": ["src/app/modules/authentication/views/index"],
+      "@authentication/services": ["src/app/modules/authentication/authentication.service"],
+      "@authentication/modules": ["src/app/modules/authentication/authentication.module"],
     }
   },
   "angularCompilerOptions": {
