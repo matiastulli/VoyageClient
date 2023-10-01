@@ -33,6 +33,8 @@
       "@authentication/views": ["src/app/modules/authentication/views/index"],
       "@authentication/services": ["src/app/modules/authentication/authentication.service"],
       "@authentication/modules": ["src/app/modules/authentication/authentication.module"],
+      // home Module
+      "@home/modules": ["src/app/modules/home/home.module"],
     }
   },
   "angularCompilerOptions": {

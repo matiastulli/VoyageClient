@@ -11,7 +11,8 @@ import { AppComponent } from './app.component';
 
 // Shared Imports
 import { AuthenticationModule } from '@authentication/modules';
-import { MaterialModule } from '@shared/modules'
+import { HomeModule } from 'src/app/modules/home/home/home.module';
+import { MaterialModule } from '@shared/modules';
 
 const sharedModules = [MaterialModule]
 
@@ -22,6 +23,7 @@ const sharedModules = [MaterialModule]
   imports: [
 		CommonModule,
     BrowserModule,
+    HomeModule,
     AuthenticationModule,
 		BrowserAnimationsModule,
     HttpClientModule,
