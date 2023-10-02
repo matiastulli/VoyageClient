@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SliderComponent } from '../slider/views/slider.component';
+import { SliderComponent } from '@home/views';
 
 @NgModule({
   declarations: [SliderComponent],

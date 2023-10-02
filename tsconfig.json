@@ -30,11 +30,12 @@
 			"@shared/guards": ["src/app/shared/guards/index"],
 			"@environment": ["src/environments/environment.local"],
       // authentication Module
-      "@authentication/views": ["src/app/modules/authentication/views/index"],
-      "@authentication/services": ["src/app/modules/authentication/authentication.service"],
-      "@authentication/modules": ["src/app/modules/authentication/authentication.module"],
+      "@authentication/views": ["src/app/views/authentication/index"],
+      "@authentication/services": ["src/app/core/authentication/authentication.service"],
+      "@authentication/modules": ["src/app/core/authentication/authentication.module"],
       // home Module
-      "@home/modules": ["src/app/modules/home/home.module"],
+      "@home/views": ["src/app/views/home/index"],
+      "@home/modules": ["src/app/core/home/index"],
     }
   },
   "angularCompilerOptions": {

@@ -10,9 +10,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // Shared Imports
-import { AuthenticationModule } from '@authentication/modules';
-import { HomeModule } from 'src/app/modules/home/home/home.module';
 import { MaterialModule } from '@shared/modules';
+import { AuthenticationModule } from '@authentication/modules';
+import { HomeModule, SliderModule, NavbarModule } from '@home/modules';
 
 const sharedModules = [MaterialModule]
 
@@ -24,6 +24,8 @@ const sharedModules = [MaterialModule]
 		CommonModule,
     BrowserModule,
     HomeModule,
+    SliderModule,
+    NavbarModule,
     AuthenticationModule,
 		BrowserAnimationsModule,
     HttpClientModule,

@@ -1,10 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from '../app/modules/home/home/views/home.component';
-
-// Shared Imports
-// import { isLoggedGuard } from '@shared/guards'
+import { HomeComponent } from '@home/views';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
